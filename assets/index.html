@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mi primer Formulario</title>
+  </head>
+  <body>
+  <center>
+    <form action="index.html">
+      <h1>Formulario de Datos</h1>
+     <p>
+        <label for="nom">Nombre</label><br>
+        <input  type="text" name="nom" required="required">
+     </p>
+     <p>
+        <label for="ape">Apellido</label><br>
+        <input type="text" name="ape" required="required">
+     </p>
+     <p>
+       <label for="fono">Teléfono</label><br>
+       <input type="tel" name="fono" pattern="[0-9]{9}" required="required">
+     </p>
+     <p>
+       <label>Seleccione su medio de transporte</label><br>
+       <select name="select">
+          <option value="valor1">--</option>
+          <option value="valor2">Auto</option>
+          <option value="valor3">Moto</option>
+          <option value="valor4">Bicicleta</option>
+          <option value="valor5">Trasporte Público</option>
+       </select>
+     </p>
+     <p>
+        <label for="mail">Email</label><br>
+        <input type="email" name="mail"required="required">
+     </p>
+     <p>
+        <label for="pw">Crea tu contraseña</label><br>
+        <input type="password" name="pw" pattern="{6,}" title="6 o más carateres" required="required">
+     </p>
+     <p>
+        <input type="submit" name="" value="Enviar">
+     </p>
+
+    </form>
+  </center>
+  </body>
+</html>
